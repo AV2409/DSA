@@ -5,14 +5,12 @@ private:
 
         int hours=0;
         for(int i=0;i<piles.size();i++){
-            if(piles[i]%mid==0) hours=hours+(piles[i]/mid);
+            hours=hours+(piles[i]/mid);
 
-            else{
-                if(hours<=h){
-                    hours=hours+(piles[i]/mid)+1;
-                }
+            if(piles[i]%mid!=0) {
+                hours++;
             }
-            
+
             if(hours>h) return 0;
             
         }
