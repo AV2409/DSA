@@ -1,7 +1,4 @@
-class Solution {
-private: 
-
-    bool ispossible(vector<int>& piles, int h,int mid){
+bool ispossible(vector<int>& piles, int h,int mid){
 
         int hours=0;
         for(int i=0;i<piles.size();i++){
@@ -19,6 +16,7 @@ private:
 
     }
 
+class Solution {
 public:
 
     int minEatingSpeed(vector<int>& piles, int h) {
