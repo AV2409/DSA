@@ -12,6 +12,7 @@ private:
                     hours=hours+(piles[i]/mid)+1;
                 }
             }
+            
             if(hours>h) return 0;
             
         }
