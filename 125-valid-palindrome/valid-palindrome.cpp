@@ -1,10 +1,12 @@
+
+
+class Solution {
+private: 
 int check_char(char c){
     if((c>='a'&&c<='z')||(c>='0'&&c<='9')) return 1;
 
     return 0;
 }
-
-class Solution {
 public:
     bool isPalindrome(string s) {
         int start=0;
