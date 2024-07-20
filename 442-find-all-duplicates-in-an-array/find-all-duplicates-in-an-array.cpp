@@ -6,12 +6,15 @@ public:
 
         // map<int,int> mp;
 
-        unordered_set<int> s;
+        // unordered_set<int> s;
+        int check[100000]={0};
+        int index;
 
         for(int i=0;i<nums.size();i++){
-            if(s.count(nums[i])==1) ans.push_back(nums[i]);
+            index=nums[i]-1;
+            check[index]++;
+            if(check[index]>1) ans.push_back(nums[i]);
 
-            s.insert(nums[i]);
         }
 
         return ans;
