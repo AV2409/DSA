@@ -18,10 +18,8 @@ public:
                 int sum=nums[i]+nums[st]+nums[end];
                 if(sum==0)
                 {
-                    temp.push_back(nums[i]);
-                    temp.push_back(nums[st]);
-                    temp.push_back(nums[end]);
-                    ans.push_back(temp);
+                    
+                    ans.push_back({nums[i],nums[st],nums[end]});
 
                     while(st<end && nums[st]==nums[st+1]) st++;
                     while(st<end && nums[end]==nums[end-1]) end--;
