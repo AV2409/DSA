@@ -18,6 +18,8 @@ public:
 
         hash[s[r]]=1;
 
+        
+
         len=r-l+1;
         maxlen=max(maxlen,len);
 
