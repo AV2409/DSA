@@ -9,9 +9,7 @@ public:
     
     while(r<n){
         if(prices[l]>prices[r]) {
-            l++;
-            if(l==r) r++;
-            continue;
+            l=r;
         }
         int profit=prices[r]-prices[l];
         maxprofit=max(profit,maxprofit);
