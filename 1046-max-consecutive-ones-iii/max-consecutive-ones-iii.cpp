@@ -19,9 +19,9 @@ public:
 
        
         
-            int len=r-l+1;
-            maxlen=max(maxlen,len);
-            r++;
+        int len=r-l+1;
+        maxlen=max(maxlen,len);
+        r++;
         
         
     }
