@@ -12,6 +12,7 @@ void reverse(vector<int>& arr, int st,int end){
 public:
     void rotate(vector<int>& nums, int k) {
     k=k%nums.size();
+    if(k==0) return;
 
     // vector<int> temp;
     // int x=nums.size()-k;
