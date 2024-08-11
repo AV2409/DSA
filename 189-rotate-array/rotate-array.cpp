@@ -27,21 +27,11 @@ public:
 
     // nums=temp;
 
-    int n=nums.size();
-    int i=0;
-    int j=n-k-1;
+    int n=nums.size()-1;
 
-    reverse(nums,i,j);
-
-    i=n-k;
-    j=n-1;
-
-    reverse(nums,i,j);
-
-    i=0;
-    j=n-1;
-
-    reverse(nums,i,j);
+    reverse(nums,0,n-k);
+    reverse(nums,n-k+1,n);
+    reverse(nums,0,n);
         
     }
 };
