@@ -1,9 +1,12 @@
 class Solution {
     private: 
     int pivot(vector<int>& nums){
-
-        int s = 0;
-    int e = nums.size() - 1;
+    
+    int n=nums.size();
+        
+    if(nums[0]<nums[n-1]) return 0;
+    int s = 0;
+    int e = n - 1;
     int mid = s + (e - s) / 2;
 
     while (s <= e)
@@ -14,7 +17,7 @@ class Solution {
             s = mid + 1;
         }
 
-        else if (nums[mid] < nums[e])
+        else
         {
             e = mid;
         }
@@ -24,11 +27,16 @@ class Solution {
 
     return mid;
 
+
     }
+
+
 public:
     int findMin(vector<int>& nums) 
     {
     int index=pivot(nums);
+
+    
 
     int ans=nums[index];
 
